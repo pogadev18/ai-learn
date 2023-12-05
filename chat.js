@@ -1,10 +1,5 @@
-import 'dotenv/config'
 import readline from 'node:readline'
-import OpenAI from 'openai'
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-})
+import { openai } from './openai.js'
 
 const rl = readline.createInterface({
   input: process.stdin,
